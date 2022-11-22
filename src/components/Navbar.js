@@ -6,7 +6,7 @@ import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
 import { Row, Col, Nav, Form, Image, Navbar, Dropdown, Container, ListGroup, InputGroup } from '@themesberg/react-bootstrap';
 
 import NOTIFICATIONS_DATA from "../data/notifications";
-import Profile3 from "../assets/img/team/profile-picture-3.jpg";
+import Profile3 from "../assets/img/team/profile-picture-1.jpg";
 
 
 export default (props) => {
@@ -88,7 +88,7 @@ export default (props) => {
                 <div className="media d-flex align-items-center">
                   <Image src={Profile3} className="user-avatar md-avatar rounded-circle" />
                   <div className="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-                    <span className="mb-0 font-small fw-bold">Bonnie Green</span>
+                    <span className="mb-0 font-small fw-bold">Admin</span>
                   </div>
                 </div>
               </Dropdown.Toggle>

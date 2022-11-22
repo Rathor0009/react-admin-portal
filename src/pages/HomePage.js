@@ -9,22 +9,22 @@ import DashboardOverview from "./dashboard/DashboardOverview";
 import Transactions from "./Transactions";
 import Settings from "./Settings";
 import BootstrapTables from "./tables/BootstrapTables";
-import Signin from "./examples/Signin";
-import Signup from "./examples/Signup";
-import ForgotPassword from "./examples/ForgotPassword";
-import ResetPassword from "./examples/ResetPassword";
-import Lock from "./examples/Lock";
-import NotFoundPage from "./examples/NotFound";
-import ServerError from "./examples/ServerError";
+import Signin from "./auth/Signin";
+import Signup from "./auth/Signup";
+import ForgotPassword from "./auth/ForgotPassword";
+import ResetPassword from "./auth/ResetPassword";
+import Lock from "./auth/Lock";
+import NotFoundPage from "./auth/NotFound";
+import ServerError from "./auth/ServerError";
 
 // documentation pages
-import DocsOverview from "./documentation/DocsOverview";
-import DocsDownload from "./documentation/DocsDownload";
-import DocsQuickStart from "./documentation/DocsQuickStart";
-import DocsLicense from "./documentation/DocsLicense";
-import DocsFolderStructure from "./documentation/DocsFolderStructure";
-import DocsBuild from "./documentation/DocsBuild";
-import DocsChangelog from "./documentation/DocsChangelog";
+// import DocsOverview from "./documentation/DocsOverview";
+// import DocsDownload from "./documentation/DocsDownload";
+// import DocsQuickStart from "./documentation/DocsQuickStart";
+// import DocsLicense from "./documentation/DocsLicense";
+// import DocsFolderStructure from "./documentation/DocsFolderStructure";
+// import DocsBuild from "./documentation/DocsBuild";
+// import DocsChangelog from "./documentation/DocsChangelog";
 
 // components
 import Sidebar from "../components/Sidebar";
@@ -100,7 +100,7 @@ const RouteWithSidebar = ({ component: Component, ...rest }) => {
 
 export default () => (
   <Switch>
-    <RouteWithLoader exact path={Routes.Presentation.path} component={Presentation} />
+    <RouteWithLoader exact path={Routes.Presentation.path} component={Signin} />
     <RouteWithLoader exact path={Routes.Signin.path} component={Signin} />
     <RouteWithLoader exact path={Routes.Signup.path} component={Signup} />
     <RouteWithLoader exact path={Routes.ForgotPassword.path} component={ForgotPassword} />
@@ -134,14 +134,14 @@ export default () => (
     <RouteWithSidebar exact path={Routes.Tooltips.path} component={Tooltips} />
     <RouteWithSidebar exact path={Routes.Toasts.path} component={Toasts} />
 
-    {/* documentation */}
+    {/* documentation
     <RouteWithSidebar exact path={Routes.DocsOverview.path} component={DocsOverview} />
     <RouteWithSidebar exact path={Routes.DocsDownload.path} component={DocsDownload} />
     <RouteWithSidebar exact path={Routes.DocsQuickStart.path} component={DocsQuickStart} />
     <RouteWithSidebar exact path={Routes.DocsLicense.path} component={DocsLicense} />
     <RouteWithSidebar exact path={Routes.DocsFolderStructure.path} component={DocsFolderStructure} />
     <RouteWithSidebar exact path={Routes.DocsBuild.path} component={DocsBuild} />
-    <RouteWithSidebar exact path={Routes.DocsChangelog.path} component={DocsChangelog} />
+    <RouteWithSidebar exact path={Routes.DocsChangelog.path} component={DocsChangelog} /> */}
 
     <Redirect to={Routes.NotFound.path} />
   </Switch>

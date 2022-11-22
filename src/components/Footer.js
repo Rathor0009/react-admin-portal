@@ -21,7 +21,7 @@ export default (props) => {
 
   return (
     <div>
-      {showSettings ? (
+      {/* {showSettings ? (
         <Card className="theme-settings">
           <Card.Body className="pt-4">
             <Button className="theme-settings-close" variant="close" size="sm" aria-label="Close" onClick={() => { toggleSettings(false) }} />
@@ -95,7 +95,7 @@ export default (props) => {
             </ul>
           </Col>
         </Row>
-      </footer>
+      </footer> */}
     </div>
   );
 };

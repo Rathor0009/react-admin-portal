@@ -15,11 +15,11 @@ export default () => {
     <main>
       <section className="d-flex align-items-center my-5 mt-lg-6 mb-lg-5">
         <Container>
-          <p className="text-center">
+          {/* <p className="text-center">
             <Card.Link as={Link} to={Routes.DashboardOverview.path} className="text-gray-700">
               <FontAwesomeIcon icon={faAngleLeft} className="me-2" /> Back to homepage
             </Card.Link>
-          </p>
+          </p> */}
           <Row className="justify-content-center form-bg-image" style={{ backgroundImage: `url(${BgImage})` }}>
             <Col xs={12} className="d-flex align-items-center justify-content-center">
               <div className="mb-4 mb-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
@@ -33,7 +33,7 @@ export default () => {
                       <InputGroup.Text>
                         <FontAwesomeIcon icon={faEnvelope} />
                       </InputGroup.Text>
-                      <Form.Control autoFocus required type="email" placeholder="example@company.com" />
+                      <Form.Control autoFocus required type="email" placeholder="Email" />
                     </InputGroup>
                   </Form.Group>
                   <Form.Group id="password" className="mb-4">
